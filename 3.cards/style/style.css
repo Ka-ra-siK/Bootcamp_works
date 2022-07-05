@@ -1,0 +1,58 @@
+main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+div {
+    width: 210px;
+    height: 180px;
+    font-family: 'Сorbel', sans-serif;
+}
+
+.card {
+    text-align: center;
+    height: 230px;
+    font-size: 150px;
+}
+
+.text {
+    padding: 10px;
+    padding-top: 18px;
+    text-align: left;
+    background-color: white;
+    font-size: 20px;
+    width: 190px;
+    height: 25px;
+    box-shadow: 0 3px 5px rgba(122, 122, 122, 0.5);
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 65px;
+    left: 172px;
+    background: #4d88ef url(/img/arrow.png) no-repeat 9px 6px;
+    background-size: 13px;
+}
+
+.first-image {
+    background-color: #269F5D;
+    color: white;
+}
+
+.second-image {
+    background-color: #65C2DC;
+    color: #333333
+}
+
+.third-image {
+    background-color: #EEBC40;
+    color: white;
+}
