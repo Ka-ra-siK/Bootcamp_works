@@ -18,6 +18,7 @@ div {
     text-align: center;
     height: 230px;
     font-size: 150px;
+    position: relative;
 }
 
 .text {
@@ -35,8 +36,8 @@ div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    position: relative;
-    bottom: 65px;
+    position: absolute;
+    bottom: 35px;
     left: 172px;
     background: #4d88ef url(/img/arrow.png) no-repeat 9px 6px;
     background-size: 13px;
