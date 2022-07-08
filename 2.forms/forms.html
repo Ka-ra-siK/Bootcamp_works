@@ -9,69 +9,73 @@
 </head>
 
 <body style="width:40%;">
+
     <!----Заголовок----->
     <h1>Запись на курсы программирования</h1>
     <!----Подчеркивание----->
     <hr>
-    <!----Ввод имени----->
-    <div id="name-field" style="margin-top: 20px;">
-        Имя:
-        <div>
-            <input type="text" placeholder="Андрей" size="20">
+    <form>
+        <!----Ввод имени----->
+        <div id="name-field" style="margin-top: 20px;">
+            Имя:
+            <div>
+                <input type="text" placeholder="Андрей" size="20" required>
+            </div>
         </div>
-    </div>
 
-    <!----Выбор языка программирования на курс----->
-    <div id="program-languages" style="margin-top: 20px;">
-        <form>
-            <input type="radio" id="java" name="language" value="java-language" checked>
-            <label for="java">Java</label>
+        <!----Выбор языка программирования на курс----->
+        <div id="program-languages" style="margin-top: 20px;">
+            <form>
+                <input type="radio" id="java" name="language" value="java-language" checked>
+                <label for="java">Java</label>
 
-            <input type="radio" id="c++" name="language" value="c++-language">
-            <label for="c++">C++</label>
+                <input type="radio" id="c++" name="language" value="c++-language">
+                <label for="c++">C++</label>
 
-            <input type="radio" id="python" name="language" value="python-language">
-            <label for="python">Python</label>
+                <input type="radio" id="python" name="language" value="python-language">
+                <label for="python">Python</label>
 
-            <input type="radio" id="php" name="language" value="php-language">
-            <label for="php">PHP</label>
+                <input type="radio" id="php" name="language" value="php-language">
+                <label for="php">PHP</label>
 
-            <input type="radio" id="javascript" name="language" value="javascript-language">
-            <label for="javascript">JavaScript</label>
-        </form>
-    </div>
-
-    <!----Ввод доп информации----->
-    <div id="information" style="margin-top: 20px;">
-        Дополнительная информация:
-        <div>
-            <textarea name="details" cols="23" rows="4" placeholder="Есть опыт программирования на Java"></textarea>
+                <input type="radio" id="javascript" name="language" value="javascript-language">
+                <label for="javascript">JavaScript</label>
+            </form>
         </div>
-    </div>
 
-    <!----Ввод секретного слова----->
-    <div id="secret-word" style="margin-top: 20px;">
-        Секретное слово:
-        <div>
-            <input type="password" size="20">
+        <!----Ввод доп информации----->
+        <div id="information" style="margin-top: 20px;">
+            Дополнительная информация:
+            <div>
+                <textarea name="details" cols="23" rows="4" placeholder="Есть опыт программирования на Java"></textarea>
+            </div>
         </div>
-    </div>
 
-    <!----Ознакомление с правилами----->
-    <div id="consent" style="margin-top: 20px;">
-        <form>
-            <input type="checkbox" id="check-box" name="check" value="check">
-            <label for="check">С праилами ознакомился и согласен</label>
-        </form>
-    </div>
+        <!----Ввод секретного слова----->
+        <div id="secret-word" style="margin-top: 20px;">
+            Секретное слово:
+            <div>
+                <input type="password" size="20" required>
+            </div>
+        </div>
 
-    <!----Кнопки----->
-    <div id="buttoms" style="margin-top: 20px;">
-        <form>
-            <input type="button" id="send-button" value="Отправить">
-            <input type="button" id="clear-button" value="Очистить">
-        </form>
-    </div>
+        <!----Ознакомление с правилами----->
+        <div id="consent" style="margin-top: 20px;">
+            <form>
+                <input type="checkbox" id="check-box" name="check" value="check" required>
+                <label for="check">С праилами ознакомился и согласен</label>
+            </form>
+        </div>
+
+        <!----Кнопки----->
+        <div id="buttoms" style="margin-top: 20px;">
+            <form>
+                <input type="submit" id="send-button" value="Отправить">
+                <input type="reset" id="clear-button" value="Очистить">
+            </form>
+        </div>
+
+    </form>
 
     <!----Подчеркивание----->
     <hr style="margin-top: 20px;">
