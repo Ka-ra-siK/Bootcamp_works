@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Circe";
+}
+
+a {
+    font-family: "CirceLight";
+    color: #006be5;
+    text-decoration: none;
+}
+
+.layout {
+    max-width: 1150px;
+    padding: 22px 0 70px 0;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__preview {
+    width: 500px;
+}
+
+.product__gallery {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product__image {
+    width: 100px;
+    cursor: pointer;
+}
+
+.product__scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product__image--main {
+    width: 340px;
+}
+
+.product__title {
+    color: #131313;
+    font-family: "CirceExtraBold";
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.product__categories {
+    margin-top: 15px;
+}
+
+.product__categories-text {
+    margin-right: 40px;
+}
+
+.product__prices {
+    display: flex;
+    margin-top: 50px;
+}
+
+.product__old-price {
+    margin-right: 10px;
+    text-decoration: line-through;
+    opacity: 0.3;
+    font-size: 18px;
+}
+
+.product__current-price {
+    font-family: "CirceBold";
+    margin-right: 10px;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.product__discount-price {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.product__discount-current-price {
+    font-weight: 700;
+}
+
+.product__delivery {
+    margin-top: 20px;
+    background-color: #F4F4F4;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.product__delivery-img {
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.product__counter {
+    display: flex;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.counter--minus {
+    padding: 0 10px;
+    cursor: pointer;
+    color: gainsboro;
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.counter--count {
+    padding: 0 25px 0 25px;
+    background-color: #ede9e9;
+    border: 1px solid gainsboro;
+    width: 80px;
+}
+
+.counter--plus {
+    padding: 0 10px;
+    cursor: pointer;
+    border-top: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.product__buttons {
+    margin-top: 25px;
+}
+
+.product__to-store {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0px 5px;
+    font-size: 13px;
+    font-family: "CirceBold";
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.65px;
+    border: 2px solid #006be5;
+    background-color: #006be5;
+    min-width: 170px;
+}
+
+.product__to-store:hover {
+    cursor: pointer;
+    background-color: #0095e5;
+    transition: 0.3s;
+}
+
+.product__to-favorites {
+    display: inline-block;
+    color: #131313;
+    text-transform: uppercase;
+    padding: 0px 5px;
+    font-size: 13px;
+    font-family: "CirceBold";
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 0.65px;
+    background-color: white;
+    border: 2px solid #d9d9d9;
+    min-width: 170px;
+    margin-left: 20px;
+}
+
+.product__to-favorites:hover {
+    cursor: pointer;
+    background-color: #f7f9fc;
+    transition: 0.3s;
+}
+
+.product__text-description {
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 13px;
+    max-width: 420px;
+}
+
+.product__footer-info {
+    margin-top: 50px;
+}
+
+.product__footer-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.product__footer-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 2px;
+    border: 2px solid rgb(187, 176, 176);
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.product__footer-icon:hover {
+    cursor: pointer;
+    border: 2px solid rgb(25, 130, 242);
+    transition: 0.3s;
+}
+
+.product__footer-reposts {
+    display: inline-block;
+    font-size: 13px;
+    background: url(/img/icon/reposts.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 4px 10px 2px 15px;
+}

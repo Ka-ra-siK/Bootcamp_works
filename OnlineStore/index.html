@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="product">
+            <!----Image-->
+            <div class="product__preview">
+                <div class="product__gallery">
+                    <div class="product__scroll">
+                        <img class="product__image" src="img/img1.jpg" alt="Рубашка" onmouseover="zoomImage('image--main', 'img/img1.jpg')">
+                        <img class="product__image" src="img/img2.jpg" alt="Рубашка" onmouseover="zoomImage('image--main', 'img/img2.jpg')">
+                        <img class="product__image" src="img/img3.jpg" alt="Рубашка" onmouseover="zoomImage('image--main', 'img/img3.jpg')">
+                    </div>
+                    <img class="product__image product__image--main" id="image--main" src="img/img1.jpg" alt="Предпоказ">
+                </div>
+            </div>
+
+            <!---Description-->
+            <div class="product__description">
+                <h2 class="product__title">Рубашка medicine</h2>
+                <div class="product__categories">
+                    <a class="product__categories-text" href="#">Рубашка Medicine</a>
+                    <a class="product__categories-text" href="#">Все модели Medicine</a>
+                    <a class="product__categories-text" href="#">Рубашки</a>
+                </div>
+                <div class="product__prices">
+                    <div class="product__actual-price">
+                        <span class="product__old-price">2 699</span>
+                        <span class="product__current-price">2 499 &#8381;</span>
+                    </div>
+                    <div class="product__discount-price">
+                        <span class="product__discount-current-price">2 227 &#8381;</span>
+                        <span class="product__discount-text">- с промокодом</span>
+                    </div>
+                </div>
+
+
+                <!--Delivery-->
+                <div class="product__delivery">
+                    <div class="product__in-stock">
+                        <img class="product__delivery-img" src="img/icon/ok.png" alt="#"> В наличии в магазине
+                        <a href="#">Lamoda</a>
+                    </div>
+                    <div class="product__delivery-price">
+                        <img class="product__delivery-img" src="img/icon/delivery.png" alt="#"> Бесплатная доставка</div>
+                </div>
+
+
+                <!--Counter-->
+                <div class="product__counter">
+                    <div class="counter--minus">–</div>
+                    <div class="counter--count">0</div>
+                    <div class="counter--plus">+</div>
+                </div>
+
+
+                <!--Buttons-->
+                <div class="product__buttons">
+                    <button class="product__to-store" id="buy">
+                       Купить</button>
+                    <button class="product__to-favorites">
+                        В избранное</button>
+
+                </div>
+
+                <!--Description-->
+                <div class="product__text-description">
+                    <p>Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.</p>
+                    <p>Детали: прямой крой; отложенный воротник; планка и манжеты на пуговицах; карман на груди.</p>
+
+                </div>
+
+
+                <!--Footer-->
+                <div class="product__footer-info">
+                    <span class="product__footer-text">Поделиться:</span>
+                    <div class="product__footer-icon">
+                        <a href="#"><img src="img/icon/vk.png"></a>
+                    </div>
+                    <div class="product__footer-icon">
+                        <a href="#"><img src="img/icon/google.png"></a>
+                    </div>
+                    <div class="product__footer-icon">
+                        <a href="#"><img src="img/icon/facebook.png"></a>
+                    </div>
+                    <div class="product__footer-icon">
+                        <a href="#"><img src="img/icon/twitter.png"></a>
+                    </div>
+                    <div class="product__footer-reposts">123</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/zoom.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/notify.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
