@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Circe";
+    font-family: "CirceLight", sans-serif;
 }
 
 a {
-    font-family: "CirceLight";
+    font-family: "CirceLight", sans-serif;
     color: #006be5;
     text-decoration: none;
 }
@@ -50,7 +50,7 @@ a {
 
 .product__title {
     color: #131313;
-    font-family: "CirceExtraBold";
+    font-family: "CirceExtraBold", sans-serif;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 24px;
@@ -77,7 +77,7 @@ a {
 }
 
 .product__current-price {
-    font-family: "CirceBold";
+    font-family: "CirceBold", sans-serif;
     margin-right: 10px;
     opacity: 0.6;
     font-size: 18px;
@@ -147,7 +147,7 @@ a {
     text-transform: uppercase;
     padding: 0px 5px;
     font-size: 13px;
-    font-family: "CirceBold";
+    font-family: "CirceBold", sans-serif;
     font-weight: bold;
     height: 40px;
     line-height: 40px;
@@ -169,7 +169,7 @@ a {
     text-transform: uppercase;
     padding: 0px 5px;
     font-size: 13px;
-    font-family: "CirceBold";
+    font-family: "CirceBold", sans-serif;
     font-weight: bold;
     height: 40px;
     line-height: 40px;
@@ -195,16 +195,18 @@ a {
 
 .product__footer-info {
     margin-top: 50px;
+    display: flex;
 }
 
 .product__footer-text {
     font-size: 12px;
     text-transform: uppercase;
     margin-right: 15px;
+    display: flex;
+    margin-top: 5px;
 }
 
 .product__footer-icon {
-    display: inline-block;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -212,6 +214,13 @@ a {
     border: 2px solid rgb(187, 176, 176);
     border-radius: 50%;
     margin: 0 2px;
+    position: center;
+    display: flex;
+}
+
+.product__footer-icon img{
+    margin-left: 6px;
+    
 }
 
 .product__footer-icon:hover {
@@ -221,11 +230,23 @@ a {
 }
 
 .product__footer-reposts {
-    display: inline-block;
+    display: flex;
     font-size: 13px;
-    background: url(/img/icon/reposts.png);
+    position: relative;
+    width: 40px; height: 25px;
+    background-color: #efefef;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 4px 10px 2px 15px;
+    padding: 4px 10px 2px 10px;
+    margin-left: 15px;
+}
+
+.product__footer-reposts::after {
+    content: ''; 
+    position: absolute;
+    right: 30px; top: 3px;
+    border: 10px solid transparent;
+    border-left: 20px solid #efefef;
+    transform: scaleX(-1);
 }
