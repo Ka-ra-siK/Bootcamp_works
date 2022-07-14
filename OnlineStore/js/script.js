@@ -1,4 +1,4 @@
-var count = 0;
+let count = 0;
 
 $(".counter--minus").click(function() {
     if (count > 0) {
