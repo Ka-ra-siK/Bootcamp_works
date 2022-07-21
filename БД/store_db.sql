@@ -14,7 +14,7 @@ create table categories(
 create table img(
     id int primary key not null,
     alt varchar(64),
-    product_img text
+    product_img varchar(64)
 );
 
 /*Таблица товаров*/
