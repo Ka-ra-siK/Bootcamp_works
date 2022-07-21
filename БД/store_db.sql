@@ -21,12 +21,13 @@ create table img(
 create table products(
     id int primary key not null,
     name varchar(64),
-    price int,
-    sale_price int,
-    old_price int,
+    current_price DECIMAL(15,2),
+    sale_price DECIMAL(15,2),
+    default_price DECIMAL(15,2),
     description text,
     category_id int,
     img_id int,
+    is_active BOOL DEFAULT FALSE NOT NULL,
     FOREIGN KEY (category_id) references categories(id),
     FOREIGN KEY (img_id) references img(id)
 );
@@ -71,10 +72,10 @@ INSERT INTO img VALUES
 INSERT INTO products VALUES
 (1, 'Рубашка medicine', 2499, 2227, 2699,
  'Рубашка Medicine выполнена из вискозной ткани с клетчатым узором. Детали: прямой крой; отложенный воротник; планка и манжеты на пуговицах; карман на груди.',
- 3, 1),
+ 3, 1, 1),
 (2, 'Футболка UZcotton', 249, 222, 269,
  'Базовая женская футболка Uzcotton выполнена из премиального трикотажа, который удобен в носке и приятен к телу.',
- 2, 4);
+ 2, 4, 1);
 
 /*Заполнение вспомогательной таблицы категорий*/
 INSERT INTO products_category VALUES
